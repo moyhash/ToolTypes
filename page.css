@@ -1,0 +1,46 @@
+.arrowpopup {
+  border: 2px dotted red;
+  position: relative;
+  display: inline-block;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.arrowpopup .tooltiptext {
+  visibility: hidden;
+  position: absolute;
+  width: 160px;
+  background-color: #856;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  padding: 9px;
+  top: 150%;
+  left: 50%;
+  margin-left: -85px;
+}
+
+.arrowpopup .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #856 transparent transparent transparent;
+}
+
+.arrowpopup .show {
+  visibility: visible;
+}
+
+.bottom {
+  top: 25px;
+  left: -50%;
+}
+.bottom::after{ 
+  top: -32%;
+  left: 45%;
+  rotate: 180deg;
+}
